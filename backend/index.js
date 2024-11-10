@@ -74,7 +74,7 @@ io.on("connection", (socket) => {
 
 // Fallback for React Router
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
+  res.sendFile(path.join(__dirname, "../frontend/dist/index.html"));
 });
 
 const PORT = 3001;
